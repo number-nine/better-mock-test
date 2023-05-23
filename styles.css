@@ -40,7 +40,7 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
     .container {
-        padding-top: 73px;
+        padding-left: 73px;
         padding-right: 73px;
         margin-left: auto;
         margin-right: auto;
