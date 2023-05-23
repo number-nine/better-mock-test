@@ -128,8 +128,8 @@
         position: absolute;
         transform: translateX(-90%);
         content: '';
-        width: 430px;
-        height: 455px;
+        width: 465px;
+        height: 495px;
         /* border: 1px solid red; */
         background-image: url("./images/d-girl@1x.png");
         background-position: bottom right;
@@ -152,7 +152,8 @@
 
     .subtitle::after {
         position: absolute;
-        transform: translateX(-10%);
+        /* right: px; */
+        transform: translateX(28%);
         content: '';
         width: 400px;
         height: 380px;
@@ -176,7 +177,7 @@
 @media (max-width: 767px) {
     .subtitle::after {
         position: absolute;
-        left: -50px;
+        left: -20px;
         /* transform: translatex(-90%); */
         content: '';
         width: 320px;
