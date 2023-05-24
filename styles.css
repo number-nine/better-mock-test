@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+* ::after,
+* ::before {
+    box-sizing: inherit;
+}
+
 /* body {} */
 
 @media (min-width: 1280px) {
@@ -55,26 +60,37 @@
         /* overflow: hidden; */
     }
 
+    .top-wrapper {
+        position: relative;
+
+        padding-left: 73px;
+        padding-right: 73px;
+
+        width: 100%;
+        height: 28.3vh;
+        min-height: 290px;
+        background-image: url("./images/d-brush@1x.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 30%
+    }
+
     .bottom-wrapper {
         padding-left: 73px;
         padding-right: 73px;
+
+
         width: 100%;
-        height: 600px;
+
+        height: 51.3vh;
+        min-height: 735px;
         background-image: url("./images/t-bottom@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
-    .top-wrapper {
-        padding-left: 73px;
-        padding-right: 73px;
-        width: 100%;
-        height: 200px;
-        background-image: url("./images/brush@1x-test.png");
-        background-position: top right;
-        background-repeat: no-repeat;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -90,42 +106,32 @@
         /* overflow: hidden; */
     }
 
+    .top-wrapper {
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        min-height: 360px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
     .bottom-wrapper {
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
-        height: 700px;
+        height: 159vw;
+        min-height: 560px;
         background-image: url("./images/m-bottom@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
-    .top-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
 
 }
-
-
-
-
-
-
-
-/* footer .container {
-    width: 1280px;
-    height: 400px;
-    background-color: #a6fcf7;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-    background-image: url("./images/d-bottom@1x.png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-} */
-
 
 
 
@@ -137,14 +143,13 @@
         content: '';
         width: 465px;
         height: 495px;
-        /* border: 1px solid red; */
         background-image: url("./images/d-girl@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
+
     }
 
     .subtitle {
-        /* margin-top: ; */
         margin-left: 380px;
         position: relative;
     }
@@ -159,15 +164,21 @@
 
     .subtitle::after {
         position: absolute;
-        /* right: px; */
-        transform: translateX(28%);
+
         content: '';
-        width: 400px;
-        height: 380px;
-        /* border: 1px solid red; */
+
+        right:-60px;
+        top:14vw;
+
+        width: 52vw;
+        height: 49.5vw;
+        min-width: 400px;
+        min-height: 380px;
+
         background-image: url("./images/girl@1x-test.png");
-        background-position: bottom right;
+        background-position: top right;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .subtitle {
@@ -183,21 +194,25 @@
 
 @media (max-width: 767px) {
     .subtitle::after {
-        position: absolute;
-        left: -20px;
-        /* transform: translatex(-90%); */
         content: '';
-        width: 320px;
-        height: 318px;
-        /* border: 1px solid red; */
+
+        position: absolute;
+        left: 0;
+
+        width: 100vw;
+        height: 99vw;
+        min-width: 320px;
+        min-height: 318px;
+
         background-image: url("./images/m-top@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .subtitle {
         /* margin-left: 50px; */
-        position: relative;
+        /* position: relative; */
     }
 
     .underline {
