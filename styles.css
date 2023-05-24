@@ -147,7 +147,6 @@
 
     .subtitle {
         margin-left: 380px;
-        /* position: relative; */
     }
 
     .underline {
@@ -178,12 +177,11 @@
     }
 
     .subtitle {
-        /* margin-left: 200px; */
-        /* position: relative; */
+
     }
 
     .underline {
-        /* margin-left: 200px; */
+
     }
 
 }
@@ -207,11 +205,9 @@
     }
 
     .subtitle {
-        /* margin-left: 50px; */
-        /* position: relative; */
+
     }
 
     .underline {
-        /* margin-left: 50px; */
     }
 }
