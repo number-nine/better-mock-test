@@ -11,54 +11,54 @@
 
 /* body {} */
 
-@media (min-width: 1280px) {
-    .container {
-        width: 100%;
-        /* margin-left: auto; */
-        /* margin-right: auto; */
+.container {
 
-        /* width: 1280px; */
-        /* height: 500px; */
-        background-color: #a6fcf7;
-        /* overflow: hidden; */
+    width: 100%;
+
+    background-color: #a6fcf7;
+}
+
+@media (min-width: 1280px) {
+
+
+    .top-wrapper {
+        position: relative;
+
+        padding-left: 55px;
+        padding-right: 55px;
+
+        width: 100%;
+        height: 28.3vw;
+        min-height: 265px;
+
+        background-image: url("./images/d-brush@1x.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 18%;
     }
 
     .bottom-wrapper {
         padding-left: 55px;
         padding-right: 55px;
+
         width: 100%;
-        height: 600px;
+
+        height: 47.8vw;
+        min-height: 612px;
         background-image: url("./images/d-bottom@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .top-wrapper {
-        padding-left: 55px;
-        padding-right: 55px;
-        width: 100%;
-        height: 200px;
-        background-image: url("./images/d-brush@1x.png");
-        background-position: top right;
-        background-repeat: no-repeat;
-    }
+
 
 
 
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-    .container {
 
-        width: 100%;
-        /* margin-left: auto;
-        margin-right: auto;
-        width: 760px; */
-        /* height: 400px; */
-        background-color: #a6fcf7;
-        /* overflow: hidden; */
-    }
 
     .top-wrapper {
         position: relative;
@@ -67,22 +67,21 @@
         padding-right: 73px;
 
         width: 100%;
-        height: 28.3vh;
-        min-height: 290px;
+        height: 28.3vw;
+        min-height: 265px;
         background-image: url("./images/d-brush@1x.png");
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: 30%
+        background-size: 30%;
     }
 
     .bottom-wrapper {
         padding-left: 73px;
         padding-right: 73px;
 
-
         width: 100%;
 
-        height: 51.3vh;
+        height: 51.3vw;
         min-height: 735px;
         background-image: url("./images/t-bottom@1x.png");
         background-position: bottom right;
@@ -94,17 +93,6 @@
 }
 
 @media (max-width: 767px) {
-    .container {
-
-        /* margin-left: auto;
-        margin-right: auto;
-        width: 320px; */
-
-        width: 100%;
-        /* height: 400px; */
-        background-color: #a6fcf7;
-        /* overflow: hidden; */
-    }
 
     .top-wrapper {
         position: relative;
@@ -120,9 +108,11 @@
     .bottom-wrapper {
         padding-left: 20px;
         padding-right: 20px;
+
         width: 100%;
         height: 159vw;
         min-height: 560px;
+
         background-image: url("./images/m-bottom@1x.png");
         background-position: bottom right;
         background-repeat: no-repeat;
@@ -137,21 +127,27 @@
 
 @media (min-width: 1280px) {
     .subtitle::before {
-
-        position: absolute;
-        transform: translateX(-90%);
         content: '';
-        width: 465px;
-        height: 495px;
+        position: absolute;
+
+        left: 8px;
+        top: 10vw;
+
+        width: 36.3vw;
+        height: 38.7vw;
+        min-width: 465px;
+        min-height: 495px;
+
         background-image: url("./images/d-girl@1x.png");
-        background-position: bottom right;
+        background-position: top left;
         background-repeat: no-repeat;
+        background-size: contain;
 
     }
 
     .subtitle {
         margin-left: 380px;
-        position: relative;
+        /* position: relative; */
     }
 
     .underline {
@@ -167,8 +163,8 @@
 
         content: '';
 
-        right:-60px;
-        top:14vw;
+        right: 52px;
+        top: 18.5vw;
 
         width: 52vw;
         height: 49.5vw;
@@ -183,7 +179,7 @@
 
     .subtitle {
         /* margin-left: 200px; */
-        position: relative;
+        /* position: relative; */
     }
 
     .underline {
